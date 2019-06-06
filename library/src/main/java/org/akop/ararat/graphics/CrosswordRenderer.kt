@@ -22,16 +22,9 @@ package org.akop.ararat.graphics
 
 import android.content.Context
 import android.content.res.Resources
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.Rect
-import android.graphics.RectF
-
+import android.graphics.*
 import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.CrosswordState
-
 import java.io.FileOutputStream
 import java.io.IOException
 
@@ -67,6 +60,7 @@ class CrosswordRenderer(context: Context) {
 
         puzzleBackgroundPaint.color = PUZZLE_BG_COLOR
         puzzleBackgroundPaint.style = Paint.Style.FILL
+        puzzleBackgroundPaint.alpha = 0
 
         circleStrokePaint.color = CIRCLE_STROKE_COLOR
         circleStrokePaint.style = Paint.Style.STROKE
@@ -183,7 +177,7 @@ class CrosswordRenderer(context: Context) {
 
         private val CELL_STROKE_COLOR = Color.parseColor("#000000")
         private val CELL_FILL_COLOR = Color.parseColor("#ffffff")
-        private val PUZZLE_BG_COLOR = Color.parseColor("#000000")
+        private val PUZZLE_BG_COLOR = Color.parseColor("#00000000")
         private val CIRCLE_STROKE_COLOR = Color.parseColor("#555555")
         private val TEXT_COLOR = Color.parseColor("#000000")
 
