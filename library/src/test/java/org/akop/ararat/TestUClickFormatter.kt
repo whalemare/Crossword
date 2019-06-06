@@ -57,7 +57,8 @@ class TestUClickFormatter: BaseTest() {
                 copyright = "Universal UClick",
                 comment = null,
                 date = 0,
-                hash = "ca07bbda63cd5e59b3a60bcc4586164f9fd597a7")
+                hash = "ca07bbda63cd5e59b3a60bcc4586164f9fd597a7"
+        )
         val layout = arrayOf(
                 "TAUPE#DAD#KEPIS",
                 "ASPEN#OBI#ARENA",

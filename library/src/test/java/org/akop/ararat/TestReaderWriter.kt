@@ -24,9 +24,8 @@ import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.CrosswordReader
 import org.akop.ararat.core.CrosswordWriter
 import org.akop.ararat.io.PuzFormatter
-import org.junit.Test
 import org.junit.Assert
-
+import org.junit.Test
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 

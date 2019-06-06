@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">CrosswordDemo</string>
-    <string name="solve_square">Solve square</string>
-    <string name="solve_word">Solve word</string>
-    <string name="solve_puzzle">Solve puzzle</string>
-    <string name="restart">Restart</string>
-    <string name="across">%1$d. Across • %2$s</string>
-    <string name="down">%1$d. Down • %2$s</string>
-    <string name="title_by_author">%1$s by %2$s</string>
-    <string name="youve_solved_the_puzzle">You\'ve solved the puzzle!</string>
+    <string name="app_name">Кроссворд</string>
+    <string name="solve_square">Решить квадрат</string>
+    <string name="solve_word">Решить слово</string>
+    <string name="solve_puzzle">Решить кроссворд</string>
+    <string name="restart">Перезапустить</string>
+    <string name="across">%1$d. Вправо • %2$s</string>
+    <string name="down">%1$d. Вниз • %2$s</string>
+    <string name="title_by_author">%1$s от %2$s</string>
+    <string name="youve_solved_the_puzzle">Вы решили кроссворд!</string>
 </resources>
