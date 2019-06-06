@@ -16,7 +16,12 @@ import org.jetbrains.annotations.Nullable;
 import kotlin.jvm.functions.Function1;
 
 /**
- * @author Anton Vlasov - whalemare
+ * Класс отвечает за отображение данных пришедших от слоя модели
+ * Рисует поле кроссворда
+ * Обрабатывает нажатия клавиш на поля кросворда и отправляет эти события в контроллер
+ * Валидирует введенный символ на правильность, чтобы можно было вводить только буквы
+ * Запускает плавную анимацию переливания на фоне
+ * @author Matvey Starodubov
  * @since 2019
  */
 public class MainActivity

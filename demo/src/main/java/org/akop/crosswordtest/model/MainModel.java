@@ -15,14 +15,21 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 
 /**
- * @author Anton Vlasov - whalemare
+ * @author Matvey Starodubov
  * @since 2019
  */
 public class MainModel {
+
+    /**
+     * Публичный метод для возможности получения кроссворда из базы данных
+     */
     public Crossword getCrossword(Resources resources) {
         return readPuzzle(resources, R.raw.wsj);
     }
 
+    /**
+     * Функция парсинга файла кроссворда, который пришел из БД и преобразование его в объект Crossword
+     */
     private Crossword readPuzzle(Resources resources, @RawRes int resourceId) {
         final InputStream inputStream = resources.openRawResource(resourceId);
         return CrosswordKt.buildCrossword(new Function1<Crossword.Builder, Unit>() {
@@ -38,6 +45,9 @@ public class MainModel {
         });
     }
 
+    /**
+     * Генерирует текст подсказки в зависимости от того какое слово выбрано
+     */
     public String generateTextDependOnDirection(Resources resources, Crossword.Word word) {
         switch (word.getDirection()) {
             case Crossword.Word.DIR_ACROSS:
@@ -49,6 +59,9 @@ public class MainModel {
         }
     }
 
+    /**
+     * Увеличивает номер пройденного шага, чтобы пользователь видел сколько действий он совершил
+     */
     public int incrementStepIfNeeded(int current, Crossword.Word word) {
         return current + 1;
     }

@@ -3,7 +3,7 @@ package org.akop.crosswordtest.view;
 import org.akop.ararat.core.Crossword;
 
 /**
- * @author Anton Vlasov - whalemare
+ * @author Matvey Starodubov
  * @since 2019
  */
 public interface MainView {
